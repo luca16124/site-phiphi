@@ -1,0 +1,105 @@
+.profile_pic {
+    height: 40vh; /* Ajustement de la taille */
+    width: 30vh; /* Ajustement de la taille */
+    border-radius: 40%; /* Rendre l'image parfaitement ronde */
+    object-fit: cover; /* Remplit le cercle tout en conservant le ratio de l'image */
+    object-position: center; /* Centre l'image */
+    z-index: 0; /* Permet à l'image d'être derrière les éléments textuels */
+    margin-top: 1rem; /* Espacement en haut pour éviter le chevauchement */
+}
+
+
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    align-items: center; /* Centrer verticalement */
+    justify-content: space-between; /* Espace entre le contenu textuel et l'image */
+    padding: 2rem; /* Espacement autour du contenu */
+}
+
+.intro-content {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 2rem;
+    font-size: 2rem; /* Taille de police initiale */
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alignement à gauche pour une meilleure lisibilité */
+    position: relative; /* Nécessaire pour le z-index */
+    z-index: 1; /* Éléments au-dessus de l'image */
+}
+
+.intro-paragraph {
+    font-size: medium;
+    font-weight: 300;
+    color: white; /* Couleur du texte */
+    margin: 1rem 0; /* Espacement */
+}
+
+.btn-contact {
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.collab-icon {
+    margin-right: 0.4rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 840px) {
+    .profile_pic {
+        height: 25vh; /* Ajustement pour petits écrans */
+        width: 20vh; /* Ajustement pour petits écrans */
+        margin: 1rem 0; /* Espacement pour éviter le chevauchement */
+    }
+    .intro-content {
+        font-size: 5vw; /* Taille de police responsive */
+        align-items: center; /* Centrer le contenu sur petits écrans */
+        text-align: center; /* Centrer le texte */
+        padding: 1rem; /* Espacement réduit */
+    }
+    
+    #intro {
+        flex-direction: column; /* Empiler les éléments sur petits écrans */
+        align-items: center; /* Centrer tout le contenu */
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .profile_pic {
+      width: 17vh; /* La largeur sera de 17% de la hauteur de la fenêtre */
+      height: 17vh; /* La hauteur sera de 17% de la hauteur de la fenêtre */
+    }
+  }
+
+.btn-cv {
+    background: linear-gradient(267deg, #bfda25 0.36%, #23e1d7);
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+   color: black;
+    text-decoration: none;  // Supprime la décoration de lien
+    font-size: medium;
+    transition: background-color 0.3s ease;
+
+}
+
+.cv-icon {
+    margin-right: 0.5rem;  // Espacement entre l'icône et le texte
+    font-size: 1.5rem;
+}

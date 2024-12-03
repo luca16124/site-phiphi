@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.footer {
+    background: rgba(158, 60, 60, 0.05);
+    padding: 1.5em 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 6em;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-info h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: wheat;
+}
+
+.footer-links {
+    margin: 1em 0;
+}
+
+.footer-links a {
+    color: wheat;
+    text-decoration: none;
+    margin: 0 0.75em;
+    font-size: 1.5em; /* Augmenter la taille des icônes */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a9a9a9; /* Couleur des liens au survol */
+}
+
+.footer-bottom {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: wheat; /* Couleur des droits d'auteur */
+}
+
+/* Media queries pour les écrans de taille mobile */
+@media (max-width: 1208px) {
+    .footer {
+        padding: 1em 0.5em; /* Réduis le padding */
+        margin-top: 4em; /* Réduis la marge supérieure */
+        max-width: 100%;
+    }
+
+    .footer-content {
+        max-width: 80%; /* Réduis la largeur maximale */
+    }
+
+    .footer-info h2 {
+        font-size: 1.5em; /* Réduis la taille de la police du titre */
+    }
+
+    .footer-links {
+        margin: 0.5em 0; /* Réduis la marge */
+    }
+
+    .footer-links a {
+        font-size: 1.2em; /* Ajuster la taille des icônes */
+        margin: 0 0.5em; /* Réduis la marge des liens */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Réduis la taille de la police des droits d'auteur */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 0.5em 0.25em; /* Réduis encore le padding */
+        margin-top: 3em; /* Réduis encore la marge supérieure */
+    }
+
+    .footer-content {
+        max-width: 95%; /* Réduis encore la largeur maximale */
+    }
+
+    .footer-info h2 {
+        font-size: 1.2em; /* Réduis encore la taille de la police du titre */
+    }
+
+    .footer-links {
+        margin: 0.25em 0; /* Réduis encore la marge */
+    }
+
+    .footer-links a {
+        font-size: 1em; /* Ajuster la taille des icônes */
+        margin: 0 0.25em; /* Réduis encore la marge des liens */
+    }
+
+    .footer-bottom {
+        font-size: 0.7em; /* Réduis encore la taille de la police des droits d'auteur */
+    }
+}
