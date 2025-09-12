@@ -19,13 +19,14 @@ body {
 
 /* Header */
 header {
-  background-color: #000;
+  background: url("photos/banniere.png") center/cover no-repeat;
   color: #fff;
-  padding: 40px 0;
+  padding: 90px 0;
 }
 
 header h1 {
   float: left;
+
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav a {
 }
 
 .hero {
-  background: url('https://source.unsplash.com/1600x600/?car,driver') center/cover no-repeat;
+  background: #f0f0f0 center/cover no-repeat;
   color: black;
   padding: 100px 0;
   text-align: center;
@@ -97,7 +98,7 @@ footer {
 
 /* véhicule */
 .vidéo {
-  background: url('https://source.unsplash.com/1600x600/?car,driver') center/cover no-repeat;
+  background: #f0f0f0 center/cover no-repeat;
   color: black;
   padding: 100px 0;
   text-align: center;
@@ -142,17 +143,40 @@ footer {
 
 .description {
   margin-top: -100px;
+  margin-bottom: 50px;
 }
 
 .description h2 {
   margin-bottom: 25px;
 }
 
+/* a propos de moi */
+
+.moi {
+  background: #f0f0f0 center/cover no-repeat;
+  color: black;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.moi h2{
+  margin-bottom: 40px;
+}
+
+.photo-philippe {
+  width: 195px;
+  height: 220px;
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 4px solid #e67e22;
+  margin: 20px auto;  
+  display: block;    
+}
 
 /*réservation */
 
 .resa {
-  background: url('https://source.unsplash.com/1600x600/?car,driver') center/cover no-repeat;
+  background: #f0f0f0 center/cover no-repeat;
   color: black;
   padding: 100px 0;
   text-align: center;
