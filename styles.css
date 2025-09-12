@@ -190,12 +190,34 @@ footer {
     text-align: center;
   }
 
+  header {
+    padding: 50px 20px; /* réduit la hauteur + ajoute un peu de marge latérale */
+    background-position: center; /* montre bien le centre de la bannière */
+  }
+
   header h1 {
     text-align: center;
     float: none;
     margin-bottom: 10px;
   }
 
+  .hero {
+    padding: 60px 20px; /* réduit la hauteur sur mobile */
+    background-position: center top; /* centre mieux l’image */
+  }
+
+  .hero h2 {
+    font-size: 22px; /* réduit la taille du titre */
+  }
+
+  .hero p {
+    font-size: 16px; /* réduit le texte */
+  }
+
+  .hero .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
   .service-list {
     flex-direction: column;
     align-items: center;
